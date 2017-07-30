@@ -1,9 +1,11 @@
+require('file-loader?name=[name].[ext]!../index.html');
+
 class MyComp{    
     constructor(){        
     }
     
     getText(){
-        return 'my text again';
+        return 'my text agains';
     }
 }
 
