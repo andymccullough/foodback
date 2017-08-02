@@ -3,7 +3,7 @@ class MyComp{
     }
     
     getText(){
-        return 'my text agains';
+        return 'my text again';
     }
 }
 
