@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.css';
+
 class MyComp{
     constructor(){        
     }
@@ -12,4 +14,4 @@ function component() {
   element.innerHTML = new MyComp().getText();
 }
 
-component();
+//component();
