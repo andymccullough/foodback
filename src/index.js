@@ -1,6 +1,4 @@
-require('file-loader?name=[name].[ext]!../index.html');
-
-class MyComp{    
+class MyComp{
     constructor(){        
     }
     
