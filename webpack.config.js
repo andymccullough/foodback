@@ -18,6 +18,13 @@ module.exports = {
                 }
             }
         }, {
+            test: /.jsx?$/,
+            loader: 'babel-loader',
+            exclude: /node_modules/,
+            query: {
+                presets: ['es2015', 'react']
+            }
+        }, {
             test: /\.css$/,
             loader: "style-loader!css-loader"
         },{
@@ -44,6 +51,9 @@ module.exports = {
             test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
             loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
         }]
+    },
+    resolve: {
+        extensions: ['.js', '.jsx']
     },
     plugins: [
         new HtmlWebpackPlugin({

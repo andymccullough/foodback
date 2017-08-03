@@ -1,17 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import App from './components/App';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-class MyComp{
-    constructor(){        
-    }
-    
-    getText(){
-        return 'my text again';
-    }
-}
-
-function component() {
-  var element = document.getElementById('root');  
-  element.innerHTML = new MyComp().getText();
-}
-
-//component();
+ReactDOM.render(
+    <App/>,
+    document.getElementById('root')
+);
