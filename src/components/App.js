@@ -1,5 +1,5 @@
 import React from 'react';
-import HotelTableContainer from './HotelTableContainer';
+import HotelTableContainer from './MenuTableContainer';
 
 const App = () => (
     <HotelTableContainer />

@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import hotels from './hotels'
+import menus from './Menus'
 
 const app = combineReducers({
-    hotels
+    menus
 })
 
 export default app

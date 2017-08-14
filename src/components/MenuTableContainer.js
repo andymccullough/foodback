@@ -1,10 +1,10 @@
 import {connect} from 'react-redux';
-import {addLike} from '../actions/HotelTableContainer';
-import HotelTable from './HotelTable';
+import {addLike} from '../actions/MenuTableContainer';
+import MenuTable from './MenuTable';
 
 const mapStateToProps = (state) => {
     return {
-        hotels: state.hotels
+        menus: state.menus
     }
 };
 
@@ -16,9 +16,9 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-const HotelTableContainer = connect(
+const MenuTableContainer = connect(
     mapStateToProps,
     mapDispatchToProps
-)(HotelTable);
+)(MenuTable);
 
-export default HotelTableContainer;
+export default MenuTableContainer;
