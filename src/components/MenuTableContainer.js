@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import {addLike} from '../actions/MenuTableContainer';
+import {addLike, addMenu} from '../actions/MenuTableContainer';
 import MenuTable from './MenuTable';
 
 const mapStateToProps = (state) => {
@@ -12,6 +12,9 @@ const mapDispatchToProps = (dispatch) => {
     return {
         addLike: (id) => {
             dispatch(addLike(id))
+        },
+        addMenu: (title) => {
+            dispatch(addMenu(title))
         }
     }
 };

@@ -1,6 +1,7 @@
 import React from 'react';
+import MenuTableAddEntry from './MenuTableAddEntry';
 
-const MenuTable = ({menus, addLike}) => (
+const MenuTable = ({menus, addLike, addMenu}) => (
     <div className="menu-table">
         {menus.map((menu) => (
             <div className="menu-table-row">
@@ -9,7 +10,7 @@ const MenuTable = ({menus, addLike}) => (
                 <button onClick={() => addLike(menu.id)}>Like</button>
             </div>
         ))}
-        <button>Add</button>
+        <MenuTableAddEntry addMenu={addMenu}/>
     </div>
 );
 
