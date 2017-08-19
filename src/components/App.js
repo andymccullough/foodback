@@ -1,8 +1,8 @@
 import React from 'react';
-import HotelTableContainer from './MenuTableContainer';
+import MenuTableContainer from './MenuTableContainer';
 
 const App = () => (
-    <HotelTableContainer />
+    <MenuTableContainer />
 )
 
 export default App
