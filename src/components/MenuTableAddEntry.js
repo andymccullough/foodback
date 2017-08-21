@@ -7,8 +7,8 @@ class MenuTableAddEntry extends React.Component {
         render(){
                 return (
                         <div className="menu-table-add-entry">
-                                <input ref="test" type="text"/>
-                                <button onClick={() => {this.props.addMenu(this.refs.test.value)}}>Save</button>
+                                <input ref={(text) => {this.test = text}} type="text"/>
+                                <button onClick={() => {this.props.addMenu(this.test.value); this.test.value = '';}}>Save</button>
                         </div>
                 );
         }
