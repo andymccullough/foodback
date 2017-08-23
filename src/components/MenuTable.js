@@ -3,7 +3,7 @@ import MenuTableAddEntry from './MenuTableAddEntry';
 
 const MenuTable = ({menus, addLike, addMenu}) => (
     <div className="menu-table">
-        {menus.map((menu) => (
+        {menus.menus.map((menu) => (
             <div className="menu-table-row">
                 <span>{menu.title}</span>
                 <span>{menu.likes}</span>
