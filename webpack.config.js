@@ -7,6 +7,9 @@ module.exports = {
         filename: 'app.js',
         path: path.resolve(__dirname, 'dist')
     },
+    devServer: {
+        historyApiFallback: true
+    },
     module: {
         rules: [{
             test: /\.js$/,
