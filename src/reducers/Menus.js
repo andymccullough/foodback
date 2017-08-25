@@ -1,4 +1,4 @@
-const initialState = {menus: [{}]};
+const initialState = {menus: []};
 
 const menus = (state = initialState, action) => {
   switch (action.type) {

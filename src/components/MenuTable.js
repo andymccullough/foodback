@@ -1,14 +1,12 @@
 import React from 'react';
 import MenuTableAddEntry from './MenuTableAddEntry';
+import MenuTableRow from './MenuTableRow';
+import { Link } from 'react-router-dom';
 
 const MenuTable = ({menus, addLike, addMenu}) => (
     <div className="menu-table">
         {menus.menus.map((menu) => (
-            <div className="menu-table-row">
-                <span>{menu.title}</span>
-                <span>{menu.likes}</span>
-                <button onClick={() => addLike(menu.id)}>Like</button>
-            </div>
+            <MenuTableRow key={menu.id} menu={menu} addLike={addLike}/>
         ))}
         <MenuTableAddEntry addMenu={addMenu}/>
     </div>
