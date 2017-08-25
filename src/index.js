@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import {createStore, applyMiddleware} from 'redux';
-import AsyncApp from './components/AsyncApp';
+import App from './components/App';
 import TestingRouter from './components/TestingRouter';
 import app from './reducers/app';
 import thunkMiddleware from 'redux-thunk';
@@ -20,7 +20,7 @@ ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
             <Switch>
-                <Route exact path="/" component={AsyncApp}/>
+                <Route exact path="/" component={App}/>
                 <Route path="/router" component={TestingRouter}/>
             </Switch>
         </BrowserRouter>

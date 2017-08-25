@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import { fetchMenus } from '../actions/MenuTableContainer';
 import MenuTableContainer from './MenuTableContainer';
 
-class AsyncApp extends Component {
+class App extends Component {
     constructor(props){
         super(props);
     }
@@ -25,4 +25,4 @@ const mapStateToProps = (state) => {
     }
 };
 
-export default connect(mapStateToProps)(AsyncApp);
+export default connect(mapStateToProps)(App);
